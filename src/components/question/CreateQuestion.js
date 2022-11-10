@@ -7,7 +7,7 @@ import { doc, updateDoc} from "firebase/firestore";
 import { isEmpty } from "@firebase/util";
 import storage from "../../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-
+import "../../styles/question.css";
 
 
 function sleep(ms) {
@@ -150,7 +150,7 @@ function CreateQuestion() {
 
     
     return (
-        <div>
+        <div className="question">
             <h2>Poser une question?</h2>
                 <label>
                     Titre:

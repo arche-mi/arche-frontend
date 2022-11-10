@@ -3,7 +3,7 @@ import { auth,db } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { query, collection, getDocs, where, doc } from "firebase/firestore";
-
+import "../../styles/home.css";
 
 
 function Home() {
@@ -108,10 +108,10 @@ function Home() {
     }, [user, loading]);
 
     return (
-        <div>
+        <div className='header'>
             <h1>Header</h1>
-            <button onClick={switchToProfile}>vers ton profil {name}</button>
-            <p>Home ,Ya tout ici normalement</p>
+            <button  onClick={switchToProfile}>vers ton profil {name}</button>
+            <p>Home ,Ya tout ici normalement !</p>
 
             <h2>Question's</h2>
             <a href="/question/new">Poser une question ici</a>

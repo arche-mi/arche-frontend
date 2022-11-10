@@ -1,0 +1,25 @@
+.header{
+	font-size: 3rem;
+	color-interpolation: red;
+	color: greenyellow;
+	justify-content: center;
+	align-items: center;
+	display: grid;
+	padding: 20px;
+
+}
+
+
+.header button {
+	border-radius: 20px;
+	height: 2rem;
+	width: 50%;
+	font-size: 20px;
+	padding: 9px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+.header p{
+	color: black;
+}

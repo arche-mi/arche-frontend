@@ -157,7 +157,7 @@ function Dashboard() {
     console.log(userid+':'+user?.uid)
     if (userid != user?.uid) {
         return (
-            <div>
+            <div className='dashboard'>
                 <h1>Bio</h1>
                 <a href="/">Arch</a><br></br>
                 <img src={photo} alt="Photo"/>
@@ -177,7 +177,7 @@ function Dashboard() {
         )    
     } else {
         return (
-            <div>
+            <div className='dashboard'>
                 <h1>Bio</h1>
                 <a href="/">Arch</a><br></br>
                 <img src={photo} alt="Photo"/>
