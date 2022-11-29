@@ -1,0 +1,68 @@
+.btn-primary {
+    background-color: green;
+    color: white;
+    border: 1px solid green;
+    padding: 7px 14px;
+    border-radius: 7px;
+}
+.btn-secondary {
+    background-color: wheat;
+    color: black;
+    border: 1px solid green;
+    padding: 7px 14px;
+    border-radius: 7px;
+}
+
+header {
+    background-color: wheat;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+    padding: 10px 35px;
+}
+
+#logo {
+    display: flex;
+    gap: 10px;
+}
+
+#header-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#beta {
+    color: white;
+    border: 1px solid green;
+    border-radius: 16px;
+    padding: 5px 10px;
+    background-color: rgba(81, 161, 2, 0.473);
+    font-weight: bold;
+    opacity: 0.5;
+}
+#beta:hover {
+    opacity: 0.8;
+    background-color: green;
+}
+
+#blog-btn {
+    font-size: 1rem;
+}
+
+#login-btn {
+    font-size: 1rem;
+}
+
+
+@media (max-width:448px) {
+    #beta {
+        display: none;
+    }
+    header {
+        padding: 5px 12px;
+    }
+}
