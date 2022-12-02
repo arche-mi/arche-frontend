@@ -1,3 +1,0 @@
-Back-end Of Arch Project ...
-
-key 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-
