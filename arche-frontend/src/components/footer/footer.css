@@ -26,7 +26,8 @@ body {
     border-radius: 7px;
 }
 
-header {
+footer {
+    font-family: 'Poppins';
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -36,61 +37,8 @@ header {
     padding: 10px 35px;
 }
 
-#logo {
-    display: flex;
-    gap: 10px;
-}
-
-#header-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-#arche {
-    font-family: 'Poppins';
-    font-weight: 500;
-    color: #000000;
-}
-
-#beta {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 22px;
-    color: #FFFFFF;
-    background: rgba(53, 220, 90, 0.58);
-    border: 1px solid rgba(39, 188, 72, 0.37);
-    padding: 5px 17px;
-    border-radius: 20px;
-}
-#beta:hover {
-    opacity: 0.8;
-    background-color: #27BC48;
-}
-
-#blog-btn {
-    font-size: 1rem;
-}
-
-#login-btn {
-    font-size: 1rem;
-}
-
-#img-btn img {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-}
-
-
 @media (max-width:448px) {
-    #beta {
+    #copyright {
         display: none;
-    }
-    header {
-        padding: 5px 12px;
-    }
+    }  
 }
