@@ -5,8 +5,80 @@
 }
 
 body {
-    align-items: center;
-    background: #E5E5E5;
+    background-color: #E5E5E5;
 }
 
-.
+.container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    min-height: 80vh;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+}
+
+.container main {
+    display: grid;
+    justify-content: center;
+    /* margin: 0 90px 0 90px; */
+    padding: 15px 0;
+}
+
+.container main .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 70%; */
+    border-radius: 15px;
+    background-color: #BFC8E5;
+    margin: 15px 0 ;
+}
+
+.container main .header .item {
+    transition: all 0.3s ease;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.container main .header .active {
+    background-color: #516FD4FC;
+}
+
+.container main .header .item a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.container main .header .item:hover{
+    background-color: #516FD4FC;
+}
+
+.container main .entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 70%; */
+    margin: 30px 0 30px 0;
+}
+
+.container main .entete a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px;
+    background-color: #516FD4FC;
+    border-radius: 8px;
+}
+
+.container main .entete span:nth-child(1) {
+    font-weight: 900;
+}
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: grid;
+}
