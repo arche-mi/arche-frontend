@@ -6,12 +6,14 @@
 
 body {
     background-color: #E5E5E5;
+    font-family: 'Inter';
+    font-style: normal;
 }
 
 .container {
     max-width: 1200px;
     margin: 3rem auto;
-    min-height: 80vh;
+    min-height: 60vh;
     background-color: #FFFFFF;
     border-radius: 1rem;
 }
@@ -60,7 +62,7 @@ body {
     justify-content: space-between;
     align-items: center;
     /* width: 70%; */
-    margin: 30px 0 30px 0;
+    margin: 30px 0 20px 0;
 }
 
 .container main .entete a {
@@ -81,4 +83,60 @@ body {
 
 .show{
     display: grid;
+}
+
+.container main .header .item:first-child{
+    border-radius: 15px 0 0 15px;
+}
+
+.container main .header .item:last-child {
+    border-radius: 0 15px 15px 0;
+}
+
+.container main .allquestion {
+    display: grid;
+    justify-content: center;
+}
+
+.container main .allquestion .question {
+    background-color: #D9D9D980;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.container main .allquestion .question .view {
+    margin-left: 320px;
+    background-color: #27BC48;
+    padding: 8px;
+    color: #FFFFFF;
+    border-radius: 7px;
+}
+
+.container main .allquestion .question a {
+    text-decoration: none;
+}
+
+.container main .allquestion .question .user span:last-child {
+    margin-left: 10px;
+    background-color: #35DC5A3B;
+    ;
+    padding: 7px;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.container main .allquestion .question .user {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.container main .allquestion .question .image img{
+    width: 30px;
+}
+
+.container main .allquestion .question .user .name_user {
+    margin-left: 10px;
+    font-weight: 800;
 }
