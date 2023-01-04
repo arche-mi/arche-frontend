@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -5,9 +6,8 @@
 }
 
 body {
+    font-family: 'Poppins';
     background-color: #E5E5E5;
-    font-family: 'Inter';
-    font-style: normal;
 }
 
 .container {
@@ -21,7 +21,6 @@ body {
 .container main {
     display: grid;
     justify-content: center;
-    /* margin: 0 90px 0 90px; */
     padding: 15px 0;
 }
 
@@ -29,8 +28,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: 70%; */
-    border-radius: 15px;
+    gap: 0;
+    border-radius: 10px;
     background-color: #BFC8E5;
     margin: 15px 0 ;
 }
@@ -86,11 +85,11 @@ body {
 }
 
 .container main .header .item:first-child{
-    border-radius: 15px 0 0 15px;
+    border-radius: 10px 0 0 10px;
 }
 
 .container main .header .item:last-child {
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 .container main .allquestion {
@@ -111,6 +110,12 @@ body {
     padding: 8px;
     color: #FFFFFF;
     border-radius: 7px;
+}
+
+.container main .allquestion .question .blockquestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container main .allquestion .question a {
@@ -139,4 +144,15 @@ body {
 .container main .allquestion .question .user .name_user {
     margin-left: 10px;
     font-weight: 800;
+}
+
+@media screen and (max-width: 750px) {
+    .container{
+        width: 90%;
+        margin: 50px;
+    }
+
+    .container main .header {
+        flex-direction: column;
+    }
 }
